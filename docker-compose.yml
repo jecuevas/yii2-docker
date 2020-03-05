@@ -20,3 +20,5 @@ services:
       - ./_host-volumes/app:/app:delegated
       # Composer cache
       - ~/.composer-docker/cache:/root/.composer/cache:delegated
+      - ./html:/app/web
+    #  - ./apache2:/etc/apache2
